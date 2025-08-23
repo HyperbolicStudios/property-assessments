@@ -13,7 +13,7 @@ def download_properties():
 
     # Query parameters
     params = {
-        "where": "BCAJurisdiction IN ('317')",  # Oak Bay only
+        "where": "BCAJurisdiction IN ('234')",  # Victoria only
         #"where": "BCAJurisdiction IN ('234', '317', '307', '308', '309', '389')",  # Filter by jurisdiction
         "outFields": "*",  # Retrieve all fields
         "f": "geojson",  # Output format
@@ -75,5 +75,5 @@ def analyze():
     parcels.plot()
     plt.show()
 
-
+#download_properties()
 analyze()
