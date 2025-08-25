@@ -7631,11 +7631,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#initial naive estimate of FSR</span>
-<span class="n">C</span> <span class="o">=</span> <span class="mi">3000</span> <span class="c1">#3000 $/m2, or approx 900 $/ft2</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">3000</span> <span class="c1">#3000 $/m2, a bit under 300 $/ft2</span>
 <span class="n">LS</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#improvements represent a 20% land share of the total value</span>
 
 <span class="n">merged</span><span class="p">[</span><span class="s1">'FSR'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">merged</span><span class="p">[</span><span class="s1">'land per m2'</span><span class="p">]</span><span class="o">/</span><span class="n">LS</span> <span class="o">-</span> <span class="n">merged</span><span class="p">[</span><span class="s1">'land per m2'</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">C</span>
@@ -7649,7 +7649,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#plot naive estimate</span>
@@ -7691,7 +7691,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Export the map configuration as a JSON</span>
@@ -8191,14 +8191,14 @@ Group Var  123.282  178.866
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Average lot size for reference (M2): "</span><span class="p">,</span> <span class="n">selected_sfh_lots</span><span class="p">[</span><span class="s1">'area'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
 <span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'land per m2 scaled'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'land_gross'</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="mi">550</span> <span class="o">/</span><span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'area'</span><span class="p">])</span> <span class="o">**</span> <span class="n">beta</span><span class="p">)</span> <span class="o">/</span> <span class="mi">550</span>
 
 <span class="c1">#estimate of FSR using adjusted lot sizes</span>
-<span class="n">C</span> <span class="o">=</span> <span class="mi">3000</span> <span class="c1">#3000 $/m2, or approx 900 $/ft2</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">3000</span> <span class="c1">#3000 $/m2</span>
 <span class="n">LS</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#improvements represent a 20% land share of the total value</span>
 
 <span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'FSR'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'land per m2 scaled'</span><span class="p">]</span><span class="o">/</span><span class="n">LS</span> <span class="o">-</span> <span class="n">sfh_lots</span><span class="p">[</span><span class="s1">'land per m2 scaled'</span><span class="p">])</span> <span class="o">*</span> <span class="mi">1</span><span class="o">/</span><span class="n">C</span>
@@ -8289,7 +8289,7 @@ Supporting this message is deprecated in jupyter-client 7, please make sure your
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#export configuration to json</span>
@@ -8298,7 +8298,7 @@ Supporting this message is deprecated in jupyter-client 7, please make sure your
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">map_1_config</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
 
 <span class="c1">#export to html</span>
-<span class="n">map_1</span><span class="o">.</span><span class="n">save_to_html</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s1">'final_results.html'</span><span class="p">)</span>
+<span class="n">map_1</span><span class="o">.</span><span class="n">save_to_html</span><span class="p">(</span><span class="n">file_name</span><span class="o">=</span><span class="s1">'docs/final_results.html'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8311,7 +8311,7 @@ Supporting this message is deprecated in jupyter-client 7, please make sure your
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Map saved to final_results.html!
+<pre>Map saved to docs/final_results.html!
 </pre>
 </div>
 </div>
