@@ -75,5 +75,5 @@ def analyze():
     parcels.plot()
     plt.show()
 
-#download_properties()
+download_properties()
 analyze()
